@@ -87,12 +87,12 @@
         <p>Excuse pour le retard, mais je tenais absolument à te souhaiter un joyeux anniversaire !</p>
         <p>Je sais que je n'ai pas d'argent pour t'offrir un cadeau, mais prends ce site comme mon cadeau d'anniversaire.</p>
         <p>Tu es une personne merveilleuse et adorable. Que cette journée soit aussi spéciale que toi !</p>
-        <img src="image.jpg" alt="Photo de ton amie">
         <p>Avec tout mon amour,</p>
-        <p>[Votre Nom]</p>
+        <p>[Ousmane ton tres cher ami]</p>
     </div>
     <div class="confetti"></div>
 </body>
 </html>
 
 ![WhatsApp Image 2024-07-05 à 13 46 09_5235e83c](https://github.com/GAKOUMALL/tichosabine/assets/174547728/5493c9d4-7be1-4393-9c45-6e2179113874)
+<p>La meilleure.</p>

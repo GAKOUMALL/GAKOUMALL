@@ -1,103 +1,96 @@
-WELCOME
+# A DOSSO SABINE LA MEILLEURE DES MEILLEURES
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Personnelle - Gakou Ousmane</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #50b3a2;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        section {
-            padding: 20px;
-            margin-top: 20px;
-            background: #fff;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Joyeux Anniversaire</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Gakou Ousmane</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#biographie">Biographie</a></li>
-                    <li><a href="#realisations">Réalisations</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="biographie" class="container">
-        <h2>Biographie</h2>
-        <p>Je m'appelle Gakou Ousmane. Je suis passionné par le football, la médecine, l'informatique, l'ingénierie en robotique, et le commerce. J'ai toujours été fan de la robotique et, à partir de mes 16 ans, j'ai décidé de me tourner vers le commerce pour gagner de l'argent. Cela est rapidement devenu une passion pour moi, me plaçant ainsi dans un dilemme de choix entre mes différentes passions.</p>
-    </section>
-
-    <section id="realisations" class="container">
-        <h2>Réalisations</h2>
-        <h3>GAKOU MALL</h3>
-        <p>GAKOU MALL est une entreprise innovante spécialisée dans le commerce en ligne. Fondée avec l'objectif de révolutionner l'expérience d'achat, GAKOU MALL propose une vaste gamme de produits allant de l'électronique aux vêtements, en passant par les articles de maison et les produits de beauté. Grâce à une interface utilisateur intuitive et à des services de livraison rapide, GAKOU MALL s'efforce de rendre les achats en ligne plus faciles, plus rapides et plus agréables pour ses clients. La création de GAKOU MALL a été un petit succès, marquant le début de mon aventure entrepreneuriale.</p>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:gobusiness032@gmail.com">gobusiness032@gmail.com</a></p>
-        <p>Twitter: <a href="https://twitter.com/gakoumall">@gakoumall</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Gakou Ousmane. Tous droits réservés.</p>
-    </footer>
+    <div class="container">
+        <h1>Joyeux Anniversaire !</h1>
+        <p>À ma très chère amie,</p>
+        <p>Excuse pour le retard, mais je tenais absolument à te souhaiter un joyeux anniversaire !</p>
+        <p>Je sais que je n'ai pas d'argent pour t'offrir un cadeau, mais prends ce site comme mon cadeau d'anniversaire.</p>
+        <p>Tu es une personne merveilleuse et adorable. Que cette journée soit aussi spéciale que toi !</p>
+        <p>  je sais que tu as traversée des moments durs cette année que l'année prchaine soit l'une des meilleures années que tu verra de toute ta vie.</p>
+        <p>Avec tout mon amour,</p>
+        <p>[Gakou Ousmane ton tres cher ami]</p>
+    </div>
+    <div class="confetti"></div>
 </body>
 </html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.confetti::before,
+.confetti::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #e91e63;
+    animation: confetti-fall 4s infinite;
+}
+
+.confetti::after {
+    left: 50%;
+    background: #ffeb3b;
+    animation-delay: -2s;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+![WhatsApp Image 2024-07-05 à 13 46 09_5235e83c](https://github.com/GAKOUMALL/tichosabine/assets/174547728/5493c9d4-7be1-4393-9c45-6e2179113874)

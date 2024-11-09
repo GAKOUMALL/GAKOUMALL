@@ -3,59 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Ferme</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Présentation détaillée de Gakou Ousmane avec une photo.">
+    <title>Présentation de Gakou Ousmane</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .container {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="OIG4.jpeg" alt="Une image d'un lapin et d'une poule"
-    style="width: 150;" height="150">
-  <a href="#A propos de La Ferme">A propos de La Ferme</a>
-  <a href="#Boutique">Boutique</a>
-  <a href="#Contacts">Contacts</a>
-</header>
-  <main>
-    <section id="A propos de La Ferme" class="container">
-        <h2>A propos de La Ferme</h2>
-        <p>Bienvenue à La Ferme, située à Adjamé-Bingerville. Depuis sa création, nous élevons des lapins et des poulets de haute qualité.
-        <ul>
-            <br><li><strong>Notre Mission</strong></li>
-        </ul>
-           <br> Offrir des produits d'élevage sains tout en respectant l'environnement et le bien-être animal.
-    </section>
-
-    <section id="Boutique" class="container">
-        <h2>Boutique</h2>
-        <div>
-        <img src="OIP.jpeg" alt="Photo de lapin">
-        <button id="buybutton">Acheter</button>
-        <img src="R.jpeg" alt="Photo  dee lapin"> 
-        <button id="buybutton">Acheter</button>
-        <img src="télécharger.jpeg" alt="Photo  dee lapin">
-        <button id="buybutton">Acheter</button>
-        <hr><img src="OIP (1).jpeg" alt="Photo de poulet">
-        <button id="buybutton">Acheter</button>
-        <img src="OIP (2).jpeg" alt="Photo de poulet">
-        <button id="buybutton">Acheter</button>
-        <img src="télécharger (1).jpeg" alt="Photo de poulet">
-        <button id="buybutton">Acheter</button>
+    <div class="container">
+        <h1>Présentation de Gakou Ousmane</h1>
+        <img src="https://photos.app.goo.gl/z6yvRoNLjPBhUoBm8" alt="Photo de Gakou Ousmane">
+        <p><strong>Nom</strong> : Gakou Ousmane</p>
+        <p><strong>Présentation</strong> : Gakou Ousmane est un jeune homme dynamique au sourire accueillant. Il a une carrure élancée et une posture confiante. Son visage est expressif, avec un sourire doux qui montre une attitude amicale et ouverte. Ses cheveux sont coupés court, ajoutant à son apparence soignée.</p>
+        <p>Dans la photo, il est habillé de manière moderne et stylée. Il porte une chemise bleu marine ornée de motifs subtils et des boutons qui ajoutent une touche élégante. Ce choix vestimentaire met en avant son goût pour le style soigné et décontracté à la fois. Son jean clair est décoré de motifs textuels sur les côtés, apportant une touche d'originalité et de modernité à son ensemble.</p>
+        <p>Pour compléter son look, il porte des sandales ouvertes, parfaites pour un style décontracté et confortable. Dans l'ensemble, sa présentation montre un sens du style qui combine confort et élégance, reflétant une personnalité chaleureuse et confiante.</p>
     </div>
-    <script>
-        // Sélectionner le bouton
-        const button = document.getElementById('buybutton');
-
-        // Ajouter un événement de clic au bouton
-        button.addEventListener('click', function() {
-            // Rediriger vers un site externe
-            window.location.href = 'https://linktr.ee/gakoumall';
-        });
-    </script>
-    </section>
-
-    <section id="Contacts" class="container">
-        <h2>Contacts</h2>
-        p
-    </section>
-  </main>
 </body>
 </html>

@@ -3,48 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Présentation détaillée de Gakou Ousmane avec une photo.">
-    <title>Présentation de Gakou Ousmane</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f3f3;
-        }
-        .container {
-            text-align: center;
-            margin: 20px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-    </style>
+    <title>Gakou Ousmane - Entrepreneur & Visionnaire</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Présentation de Gakou Ousmane</h1>
-        <img src="https://photos.app.goo.gl/z6yvRoNLjPBhUoBm8" alt="Photo de Gakou Ousmane">
-        <p><strong>Nom</strong> : Gakou Ousmane</p>
-        <p><strong>Présentation</strong> : Gakou Ousmane est un jeune homme dynamique au sourire accueillant. Il a une carrure élancée et une posture confiante. Son visage est expressif, avec un sourire doux qui montre une attitude amicale et ouverte. Ses cheveux sont coupés court, ajoutant à son apparence soignée.</p>
-        <p>Dans la photo, il est habillé de manière moderne et stylée. Il porte une chemise bleu marine ornée de motifs subtils et des boutons qui ajoutent une touche élégante. Ce choix vestimentaire met en avant son goût pour le style soigné et décontracté à la fois. Son jean clair est décoré de motifs textuels sur les côtés, apportant une touche d'originalité et de modernité à son ensemble.</p>
-        <p>Pour compléter son look, il porte des sandales ouvertes, parfaites pour un style décontracté et confortable. Dans l'ensemble, sa présentation montre un sens du style qui combine confort et élégance, reflétant une personnalité chaleureuse et confiante.</p>
-    </div>
+
+    <header>
+        <h1 contenteditable="true" class="editable">Gakou Ousmane</h1>
+        <button id="editButton">Modifier</button>
+        <button id="saveButton">Sauvegarder</button>
+    </header>
+
+    <section id="accueil">
+        <h2>Bienvenue</h2>
+        <p contenteditable="true" class="editable">
+            Je suis Gakou Ousmane, entrepreneur ivoirien, passionné de business et de technologie.
+        </p>
+    </section>
+
+    <section id="biographie">
+        <h2>Biographie</h2>
+        <p contenteditable="true" class="editable">
+            Je suis né le <strong>14 mars 2009</strong> à <strong>Abidjan</strong>, dans la commune d’<strong>Adjamé</strong>.
+        </p>
+    </section>
+
+    <section id="gakou-mall">
+        <h2>GAKOU MALL</h2>
+        <p contenteditable="true" class="editable">
+            J’ai fondé <strong>GAKOU MALL</strong>, une plateforme de vente de chaussures, vêtements, montres et bijoux.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Gakou Ousmane - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+section {
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+document.getElementById('editButton').addEventListener('click', function() {
+    document.querySelectorAll('.editable').forEach(el => el.setAttribute('contenteditable', 'true'));
+    alert("Mode édition activé ! Vous pouvez modifier le texte.");
+});
+
+document.getElementById('saveButton').addEventListener('click', function() {
+    let content = {};
+    document.querySelectorAll('.editable').forEach((el, index) => {
+        content[index] = el.innerHTML;
+    });
+    localStorage.setItem('savedContent', JSON.stringify(content));
+    alert("Modifications sauvegardées !");
+});
+
+window.onload = function() {
+    let savedContent = localStorage.getItem('savedContent');
+    if (savedContent) {
+        savedContent = JSON.parse(savedContent);
+        document.querySelectorAll('.editable').forEach((el, index) => {
+            if (savedContent[index]) el.innerHTML = savedContent[index];
+        });
+    }
+};
